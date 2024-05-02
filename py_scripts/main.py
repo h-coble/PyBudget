@@ -9,8 +9,8 @@ from datetime import datetime
 #Dict key = Month+Year (str)
 #Dict values are lists of Expense_Objs
 
-"""a = Expense_Obj(1,2,2023, 20, "gas", "shell")
-b = Expense_Obj(3,1,2020, 10, "food", "bk")"""
+#a = Expense_Obj(1,2,2023, 20, "gas", "shell")
+#b = Expense_Obj(3,1,2020, 10, "food", "bk")
 
 def main_menu() -> None:
     while(True):
@@ -45,8 +45,12 @@ def main_menu() -> None:
         case 3:
             #Create Budget for this month
             #View Budget after creation
-            Budget.create_budget(datetime.today().month, datetime.today().year)
-            print(3)
+            budget_categories = Budget.create_budget(datetime.today().month, datetime.today().year)
+
+            #Lists categories
+            for item in budget_categories:
+                print(item)
+            #print(3)
         case 4:
             #Read?
             print(4)
@@ -55,7 +59,6 @@ def main_menu() -> None:
     
 def main() -> int:
     main_menu()
-    print("Out of Menu")
     return 0
 
 

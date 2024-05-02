@@ -3,7 +3,7 @@ Budgets = {
 }
 
 def create_budget(month, year):
-    key = str(month) + "/"+ str(year)
+    key = str(month) + "_"+ str(year)
     print("Budget for " + key)
     print("=========================================")
 
@@ -89,7 +89,8 @@ def create_budget(month, year):
         final_list.append((each, amount_list[cat_list.index(each)]))
     
     Budgets[key] = final_list
-    return None
+    #Print Budget to It's own file
+    return final_list
 
 
         
