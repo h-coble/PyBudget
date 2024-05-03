@@ -32,7 +32,7 @@ month_dict_str= {
 
 
 class Expense:
-    def __init__ (self, month, day:int, year:int, amount:float, cat:str, thing:str):
+    def __init__ (self, month:str, day:int, year:int, amount:float, cat:str, thing:str):
         self.month = self.format_month(month)
         self.day = day
         self.year = year

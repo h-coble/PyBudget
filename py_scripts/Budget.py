@@ -84,7 +84,7 @@ def create_budget(month, year):
         cat_list.append("SAVINGS")
         amount_list.append(income_dec)
 
-    final_list = [("TOTAL", income)]
+    final_list = []
     for each in cat_list:
         final_list.append((each, amount_list[cat_list.index(each)]))
     

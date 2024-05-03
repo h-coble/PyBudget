@@ -32,12 +32,12 @@
                 "enableSsl": "Disabled"
             },
             "previewLimit": 50,
-            "server": "localhost",
+            "server": "192.168.1.111",
             "port": 3306,
-            "driver": "MySQL",
-            "name": "Example",
-            "username": "hayden",
-            "database": "example"
+            "driver": "MariaDB",
+            "name": "Pi",
+            "database": "PiEx",
+            "username": "hayden"
         }
     ]
 }
