@@ -1,6 +1,6 @@
 This is my first personal project repository.
 After being introduced to Python in CS 417 - Topics in OOP, I wanted to be more comfortable with Python.
-when I could, I added to this repo over the break between classes.
+When I could, I added to this repo over the break between classes.
 
 The Plan: 
 >Recreate a budget tracking application similar to EveryDollar by Ramsey Solutions for my own personal use.
